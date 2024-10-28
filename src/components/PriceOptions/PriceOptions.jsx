@@ -1,5 +1,4 @@
 import PriceOption from "../PriceOption/PriceOption";
-
 const PriceOptions = () => {
   const PriceOptions = [
     {
@@ -79,7 +78,7 @@ const PriceOptions = () => {
 
   return (
     <div className="container mx-auto px-3">
-      <h1 className="text-3xl my-10 text-slate-700 font-bold">
+      <h1 className="text-5xl my-10 text-slate-700 font-bold text-center">
         The best price in the town.
       </h1>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 pb-10">

@@ -72,7 +72,7 @@ const BarChart = () => {
   ];
   return (
     <div className="container mx-auto py-20 px-3">
-      <h1 className="text-3xl font-bold mb-10">Bar Chat Subject numbers:</h1>
+      <h1 className="text-5xl font-bold mb-16 text-center">Bar Chat Subject numbers:</h1>
       <div className="w-full h-96">
         <ResponsiveContainer>
           <BChart data={Marks}>

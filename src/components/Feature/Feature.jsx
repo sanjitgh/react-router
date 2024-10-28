@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
 import { FaCheckCircle } from "react-icons/fa";
-
+import PropTypes from "prop-types";
 const Feature = ({ feature }) => {
   return (
     <li className="flex items-center gap-3 text-start">
@@ -9,7 +8,8 @@ const Feature = ({ feature }) => {
     </li>
   );
 };
+
 Feature.propTypes = {
-  feature: PropTypes.object,
-};
+  feature: PropTypes.object
+}
 export default Feature;
