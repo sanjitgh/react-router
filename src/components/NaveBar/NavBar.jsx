@@ -29,7 +29,7 @@ const NavBar = () => {
           )}
         </div>
         <ul
-          className={`md:flex gap-5 justify-end bg-slate-700 md:bg-transparent md:text-black text-white px-7 py-4 absolute md:static duration-500 md:duration-0 w-full space-y-3 ${
+          className={`md:flex gap-5 items-center justify-end bg-slate-700 md:bg-transparent md:text-black text-white px-7 py-4 absolute md:static duration-500 md:duration-0 w-full space-y-3 md:space-y-0 ${
             open ? "top-20 right-0" : "-top-60 right-0"
           }`}
         >
