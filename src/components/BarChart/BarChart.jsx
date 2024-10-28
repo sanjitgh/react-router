@@ -1,15 +1,16 @@
 import {
-  LineChart as LChart,
-  Line,
+  BarChart as BChart,
+  Bar,
+  ResponsiveContainer,
   XAxis,
   YAxis,
-  ResponsiveContainer,
   CartesianGrid,
   Tooltip,
   Legend,
 } from "recharts";
-const LineChart = () => {
-  const subjectMarks = [
+
+const BarChart = () => {
+  const Marks = [
     {
       id: 1,
       name: "Alice",
@@ -69,26 +70,25 @@ const LineChart = () => {
       physics_mark: 85,
     },
   ];
-
   return (
     <div className="container mx-auto py-20 px-3">
-      <h1 className="text-3xl font-bold mb-10">Line Chart Subject numbers:</h1>
+      <h1 className="text-3xl font-bold mb-10">Bar Chat Subject numbers:</h1>
       <div className="w-full h-96">
         <ResponsiveContainer>
-          <LChart data={subjectMarks}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <CartesianGrid stroke="#f5f5f5"></CartesianGrid>
-            <Line dataKey={"chemistry_mark"} stroke="#133E87" />
-            <Line dataKey={"physics_mark"} stroke="#22c55e" />
-            <Line dataKey={"math_mark"} stroke="#ff41c7" />
-          </LChart>
+          <BChart data={Marks}>
+            <XAxis dataKey={"name"}></XAxis>
+            <YAxis></YAxis>
+            <CartesianGrid strokeDasharray={"2"} stroke="#C4D7FF" ></CartesianGrid>
+            <Tooltip></Tooltip>
+            <Legend></Legend>
+            <Bar dataKey={"chemistry_mark"} fill="#1B4242"></Bar>
+            <Bar dataKey={"physics_mark"} fill="#5C8374"></Bar>
+            <Bar dataKey={"math_mark"} fill="#9EC8B9"></Bar>
+          </BChart>
         </ResponsiveContainer>
       </div>
     </div>
   );
 };
 
-export default LineChart;
+export default BarChart;
